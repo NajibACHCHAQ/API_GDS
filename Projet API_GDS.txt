@@ -1,0 +1,25 @@
+Création API pour app web gestion de stock entreprise
+
+- Création d'un projet spring avec springboot 3.1
+	-Spring
+
+
+- Création et connection à la BDD via le fichier properties ou yml (parametrage conection BDD et persistence)
+
+	-Création d'une entitée abstraite contenant les attributs commun a tout les models
+
+		- Les classes abstraites nous affranchissent des objets abstraits. 
+			Elles nous donnent les états et le comportement de base. Par exemple, toutes les voitures doivent avoir un modèle,
+ 			une couleur et une vitesse maximale, et tu devrais être en mesure de mettre les gaz et d'appliquer les freins. Et c'est tout.
+ 			C'est un plan abstrait général. Ensuite, tu conçois les classes dont tu as besoin. 
+			Une classe abstraite n'est qu'un modèle pour les futures classes « normales ». Tu n'as pas besoin de copies d'un plan, pas vrai ? 
+			De la même manière, tu ne crées pas des instances d'une classe abstraite :) 
+			Alors écoute bien. Une classe abstraite est aussi abstraite qu'on peut l'imaginer :
+ 			c'est un « espace vide » inachevé pour un groupe de classes futures. Le vide ne peut pas être utilisé tel quel. Il est trop « brut ».
+ 			Mais il décrit certains états et comportements généraux que les classes futures héritant de la classe abstraite posséderont.
+
+	- Création des models contenant les differents attributs
+
+		 - Définition des entité et de leurs attributs ainsi que définition des liaison en base de donnée (voir fichier et annotation)
+
+	- Création des DTO selon le designe pattern Data Transfert Object
