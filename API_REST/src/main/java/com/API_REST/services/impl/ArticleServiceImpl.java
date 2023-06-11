@@ -66,7 +66,8 @@ public class ArticleServiceImpl implements ArticleService {
         Optional<Article> article = articleRepository.findArticleByCodeArticle(codeArticle);
 
         ArticleDto articleDto = ArticleDto.fromEntity(article.get());
-        return Optional.of(articleDto).orElseThrow(() ->
+        return Optional.of(articleDto)
+                .orElseThrow(() ->
                 new EntityNotFoundException("Aucun article trouvé avec le code " + id, ErrorCodes.ARTICLE_NOT_FOUND));
     }
 
